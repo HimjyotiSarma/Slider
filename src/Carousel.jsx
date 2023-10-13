@@ -32,7 +32,7 @@ export default function Carousel() {
   useEffect(() => {
     autoplaySlides()
     return () => clearInterval(interval)
-  }, [])
+  }, [currentSlide])
 
   return (
     <section className="slider-container">
